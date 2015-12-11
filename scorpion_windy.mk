@@ -22,5 +22,9 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/audio/audio_policy.conf:system/etc/audio_policy.conf \
     $(LOCAL_PATH)/audio/mixer_paths.xml:system/etc/mixer_paths.xml
 
+# Wifi
+PRODUCT_COPY_FILES += \
+   $(LOCAL_PATH)/bcmdhd.cal:system/etc/wifi/bcmdhd.cal
+
 # Include non-opensource parts
 $(call inherit-product, vendor/sony/scorpion_windy/scorpion_windy-vendor.mk)
