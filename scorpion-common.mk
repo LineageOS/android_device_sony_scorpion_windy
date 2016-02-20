@@ -32,6 +32,11 @@ PRODUCT_AAPT_PREF_CONFIG := hdpi
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/rootdir/init.device.rc:root/init.device.rc
 
+# NFC
+PRODUCT_COPY_FILES += \
+   $(LOCAL_PATH)/libnfc-brcm.conf:system/etc/libnfc-brcm.conf \
+   $(LOCAL_PATH)/libnfc-nxp.conf:system/etc/libnfc-nxp.conf
+
 # Sensors
 PRODUCT_COPY_FILES += \
    $(LOCAL_PATH)/sensor_def_qcomdev.conf:system/etc/sensor_def_qcomdev.conf
