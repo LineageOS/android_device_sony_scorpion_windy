@@ -40,6 +40,10 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
    $(LOCAL_PATH)/thermanager.xml:system/etc/thermanager.xml
 
+# Touchscreen
+PRODUCT_COPY_FILES += \
+   $(LOCAL_PATH)/clearpad.idc:system/usr/idc/clearpad.idc
+
 # call dalvik heap config
 $(call inherit-product, frameworks/native/build/tablet-10in-xhdpi-2048-dalvik-heap.mk)
 
